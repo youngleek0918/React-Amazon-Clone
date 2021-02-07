@@ -8,6 +8,7 @@ import { useStateValue } from "./StateProvider";
 function Header() {
     const [{basket}] = useStateValue();
     console.log(basket);
+
     return (
         <nav className="header">
             {/* logo on the left -> img */}
@@ -34,7 +35,7 @@ function Header() {
                     </div>
                 </Link>
 
-                <Link to="/" className="header__link">
+                <Link to="/orders" className="header__link">
                     <div className="header__option">
                         <span className="header__optionLineOne">Return</span>
                         <span className="header__optionLineTwo">& Orders</span>
